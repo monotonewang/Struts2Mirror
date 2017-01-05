@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC
-        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
-        "http://struts.apache.org/dtds/struts-2.3.dtd">
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
 
@@ -12,10 +12,17 @@
         </action>
     </package>
 
+
     <!--<package name="dd" namespace="/abc" extends="struts-default">-->
         <!--<action name="hello" class="com.demo.struts.action.HelloAction"-->
                 <!--method="say">-->
             <!--<result name="good">/hello.jsp</result>-->
         <!--</action>-->
     <!--</package>-->
+
+    <!--利用struts框架的思想，模拟一个struts框架-->
+    <!--<action name="hello" class="com.demo.struts.action.HelloAction"-->
+            <!--method="say">-->
+        <!--<result name="good">/hello.jsp</result>-->
+    <!--</action>-->
 </struts>

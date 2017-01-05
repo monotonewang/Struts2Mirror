@@ -11,6 +11,6 @@
     <title>hello Struts2</title>
 </head>
 <body>
-
+    <h1>hello struts</h1>
 </body>
 </html>
