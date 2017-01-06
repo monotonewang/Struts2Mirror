@@ -106,7 +106,7 @@ package com.demo.struts.action;
 //		<default-class-ref class="action.DefaultAction"/>
 //		如果设置了，那么在当前包下，默认处理action请的的处理类就为class指定的类。
 public class HelloAction {
-	public String say() {
+	public String say() {//方法是没有参数，并且返回值是String。
 		System.out.println("hello action say method");
 		return "good";
 	}

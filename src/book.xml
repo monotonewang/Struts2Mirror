@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+    <!--struts文件分离。分模块处理-->
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="book_*" class="com.demo.struts.action.BookAction" method="{1}">
+            <!--struts 2.5 新特性-->
+            <allowed-methods>add,update,delete,search</allowed-methods>
+        </action>
+        <!--book Action-->
+        <!--<action name="book_add" class="com.demo.struts.action.BookAction" method="add"/>-->
+        <!--<action name="book_update" class="com.demo.struts.action.BookAction" method="update"/>-->
+        <!--<action name="book" class="com.demo.struts.action.BookAction"/>-->
+    </package>
+
+</struts>

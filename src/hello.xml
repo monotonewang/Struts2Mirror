@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--struts文件分离。分模块处理-->
+    <package name="default" namespace="/" extends="struts-default">
+        <!--默认的配置Action-class处理类-不走ActionSupport-->
+        <default-action-ref name="default"/>
+        <!--配置默认的404页面-->
+        <default-class-ref class="com.demo.struts.action.DefaultAction"/>
+        <!--案例一显示一个HelloWorld-->
+        <action name="hello" class="com.demo.struts.action.HelloAction"
+                method="say">
+            <result name="good">/hello.jsp</result>
+        </action>
+        <!---->
+        <action name="default" class="com.demo.struts.action.DefaultAction">
+            <result>/default.jsp</result>
+        </action>
+
+    </package>
+</struts>

@@ -4,26 +4,27 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <!--人为常量配置-->
+    <!--可以设置默认的struts后缀名称-->
+    <constant name="struts.action.extension" value="abc,,"/>
+
+    <constant name="struts.devMode" value="true"/>
 
     <!--一个模块一个包。name用于声明包名 extends代表是继承的包名-->
-    <package name="default" namespace="/" extends="struts-default">
-        <action name="hello" class="com.demo.struts.action.HelloAction"
-                method="say">
-            <result name="good">/hello.jsp</result>
-        </action>
-    </package>
-
+    <!--<include file="hello.xml"/>-->
+    <!--include多个会报错-->
+    <include file="book.xml"/>
 
     <!--<package name="dd" namespace="/abc" extends="struts-default">-->
-        <!--<action name="hello" class="com.demo.struts.action.HelloAction"-->
-                <!--method="say">-->
-            <!--<result name="good">/hello.jsp</result>-->
-        <!--</action>-->
+    <!--<action name="hello" class="com.demo.struts.action.HelloAction"-->
+    <!--method="say">-->
+    <!--<result name="good">/hello.jsp</result>-->
+    <!--</action>-->
     <!--</package>-->
 
     <!--利用struts框架的思想，模拟一个struts框架-->
     <!--<action name="hello" class="com.demo.struts.action.HelloAction"-->
-            <!--method="say">-->
-        <!--<result name="good">/hello.jsp</result>-->
+    <!--method="say">-->
+    <!--<result name="good">/hello.jsp</result>-->
     <!--</action>-->
 </struts>
