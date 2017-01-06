@@ -5,6 +5,7 @@
 
 <struts>
 
+    <!--一个模块一个包。name用于声明包名 extends代表是继承的包名-->
     <package name="default" namespace="/" extends="struts-default">
         <action name="hello" class="com.demo.struts.action.HelloAction"
                 method="say">
