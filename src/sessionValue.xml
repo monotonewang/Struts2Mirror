@@ -11,13 +11,17 @@
             <result>/success.jsp</result>
         </global-results>
 
-        <action name="sessionValue" class="com.demo.struts.action.SessionValueAction">
+        <action name="sessionValue" class="com.demo.struts.action.ServletValueAction1">
             <!--<result>/success.jsp</result>-->
         </action>
-        <!--book Action-->
-        <!--<action name="book_add" class="com.demo.struts.action.BookAction" method="add"/>-->
-        <!--<action name="book_update" class="com.demo.struts.action.BookAction" method="update"/>-->
-        <!--<action name="book" class="com.demo.struts.action.BookAction"/>-->
+        <action name="sessionValue2" class="com.demo.struts.action.ServletValueAction2">
+            <!--<result>/success.jsp</result>-->
+        </action>
+
+        <action name="getValue" class="com.demo.struts.action.ServletValueAction3">
+            <!--<result>/success.jsp</result>-->
+        </action>
+
     </package>
 
 </struts>
