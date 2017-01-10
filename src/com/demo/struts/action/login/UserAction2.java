@@ -1,6 +1,6 @@
 package com.demo.struts.action.login;
 
-import com.demo.struts.domain.User;
+import com.demo.struts.action.login.domain.User;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 

@@ -22,7 +22,7 @@
     <!--利用struts2框架的思想，模拟一个struts框架-->
     <!--<filter>-->
         <!--<filter-name>struts</filter-name>-->
-        <!--<filter-class>com.demo.struts.filter.StrutsFilter</filter-class>-->
+        <!--<filter-class>com.demo.struts.action.basic.filter.StrutsFilter</filter-class>-->
     <!--</filter>-->
 
     <!--<filter-mapping>-->

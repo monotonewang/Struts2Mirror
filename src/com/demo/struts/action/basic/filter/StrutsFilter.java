@@ -1,4 +1,4 @@
-package com.demo.struts.filter;
+package com.demo.struts.action.basic.filter;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;

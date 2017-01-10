@@ -1,4 +1,4 @@
-package com.demo.struts.domain;
+package com.demo.struts.action.login.domain;
 
 /**
  * Created by 7 on 2017/1/10.
