@@ -12,10 +12,10 @@
 
     <!--一个模块一个包。name用于声明包名 extends代表是继承的包名-->
     <!--include多个会报错-->
-    <!--<include file="hello.xml"/>-->
-    <!--<include file="book.xml"/>-->
+    <!--<include file="basicHello.xml"/>-->
+    <!--<include file="basicBook.xml"/>-->
     <!--<include file="requestValue.xml"/>-->
-    <include file="model.xml"/>
+    <include file="login.xml"/>
 
     <!--<package name="dd" namespace="/abc" extends="struts-default">-->
     <!--<action name="hello" class="com.demo.struts.action.basic.HelloAction"-->

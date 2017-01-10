@@ -11,7 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <a href="${pageContext.request.contextPath}/hello">第一次使用struts2</a>
-  <%--<a href="${pageContext.requestvalue.contextPath}/userModel?username=tome&password=123">第一次使用struts2</a>--%>
+  <a href="${pageContext.request.contextPath}/hello">struts2</a>
   </body>
 </html>

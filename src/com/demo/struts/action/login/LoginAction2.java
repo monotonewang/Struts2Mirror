@@ -9,14 +9,17 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by 7 on 2017/1/10.
  */
-public class UserAction2 extends ActionSupport {
+public class LoginAction2 extends ActionSupport {
 	private User user;
-	public User getUser(){
+
+	public User getUser() {
 		return user;
 	}
-	public void setUser(User user){
-		this.user=user;
+
+	public void setUser(User user) {
+		this.user = user;
 	}
+
 	@Override
 	public String execute() throws Exception {
 		HttpServletRequest request = ServletActionContext.getRequest();
