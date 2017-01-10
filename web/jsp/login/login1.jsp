@@ -12,9 +12,9 @@
 </head>
 <body>
     ${requestScope["login.message"] }<br>
-    <form action="${pageContext.request.contextPath}/login" method="post">
-        username1:<input type="text" name="user.username"><br>
-        password1:<input type="password" name="user.password"><br>
+    <form action="${pageContext.request.contextPath}/login1" method="post">
+        username1:<input type="text" name="username"><br>
+        password1:<input type="password" name="password"><br>
         <input type="submit" value="登录">
         <%--username2:<input type="text" name="users[1].username"><br>--%>
         <%--password2:<input type="password" name="users[1].password"><br>--%>

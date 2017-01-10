@@ -11,6 +11,11 @@
     <title>$Title$</title>
   </head>
   <body>
-  <a href="${pageContext.requestvalue.contextPath}/userModel?username=tome&password=123">pass username</a>
+  ${requestScope["login.message"] }<br>
+  <form action="${pageContext.request.contextPath}/login0" method="post">
+    username:<input type="text" name="username"><br>
+    password:<input type="password" name="password"><br>
+    <input type="submit" value="login0">
+  </form>
   </body>
 </html>

@@ -11,9 +11,9 @@
     <title>login2</title>
 </head>
 <body>
-    <form action="${pageContext.request.contextPath}/login2" method="post">
-        username:<input type="text" name="username"><br>
-        password:<input type="password" name="password"><br>
+    <form action="${pageContext.request.contextPath}/login3" method="post">
+        username:<input type="text" name="user.username"><br>
+        password:<input type="password" name="user.password"><br>
         <input type="submit" value="login2">
     </form>
 </body>

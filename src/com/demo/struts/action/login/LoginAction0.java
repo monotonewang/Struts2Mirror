@@ -8,33 +8,17 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by 7 on 2017/1/10.
  */
-//UserBean --> login0.jsp
-//获取请求参数  属性驱动  第一种，直接将action做为model
-public class LoginAction1 extends ActionSupport  {
-	private String username;
-	private String password;
-
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
+public class LoginAction0 extends ActionSupport {
 	@Override
 	public String execute() throws Exception {
+		// 1.获取请求参数
 		HttpServletRequest request = ServletActionContext.getRequest();
+
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+
 		// 2.判断用户名与密码是否正确
-		if ("tom".equals(username) && "1234".equals(password)) {
+		if ("tom".equals(username) && "123".equals(password)) {
 
 			request.getSession().setAttribute("username", username);
 

@@ -7,14 +7,27 @@
 <struts>
     <!--struts文件分离。分模块处理-->
     <package name="default" namespace="/" extends="struts-default">
-        <action name="login1" class="com.demo.struts.action.login.LoginAction1">
-            <result>/success.jsp</result>
+
+        <action name="login0" class="com.demo.struts.action.login.LoginAction0">
+            <result name="failer">/jsp/login/login0.jsp</result>
+            <result type="redirect">/jsp/login/loginSuccess.jsp</result>
+        </action>
+
+        <action name="login1" class="com.demo.struts.action.login.LoginAction1" >
+            <result name="failer">/jsp/login/login1.jsp</result>
+            <result type="redirect">/jsp/login/loginSuccess.jsp</result>
         </action>
 
         <action name="login2" class="com.demo.struts.action.login.LoginAction2">
             <result name="failer">/jsp/login/login2.jsp</result>
             <result name="redirect">/jsp/login/loginSuccess.jsp</result>
         </action>
+
+        <action name="login3" class="com.demo.struts.action.login.LoginAction3">
+            <result name="failer">/jsp/login/login3.jsp</result>
+            <result name="redirect">/jsp/login/loginSuccess.jsp</result>
+        </action>
+
     </package>
 
 </struts>
