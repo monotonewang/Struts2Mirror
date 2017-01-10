@@ -6,6 +6,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * Created by 7 on 2017/1/6.
  */
 public class BookAction extends ActionSupport {
+
 	public String add() {
 		System.out.println("book_add");
 		return NONE;
@@ -25,4 +26,5 @@ public class BookAction extends ActionSupport {
 		System.out.println("book_search");
 		return NONE;
 	}
+
 }

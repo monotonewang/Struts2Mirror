@@ -5,6 +5,7 @@ import com.opensymphony.xwork2.ActionSupport;
 /**
  * Created by 7 on 2017/1/6.
  */
+//配置默认的404页面
 public class DefaultAction extends ActionSupport{
 
 	@Override
@@ -13,4 +14,5 @@ public class DefaultAction extends ActionSupport{
 //		return NONE;
 		return SUCCESS;
 	}
+
 }

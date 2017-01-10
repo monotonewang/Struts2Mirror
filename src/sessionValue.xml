@@ -11,17 +11,30 @@
             <result>/success.jsp</result>
         </global-results>
 
-        <action name="sessionValue" class="com.demo.struts.action.ServletValueAction1">
-            <!--<result>/success.jsp</result>-->
-        </action>
-        <action name="sessionValue2" class="com.demo.struts.action.ServletValueAction2">
-            <!--<result>/success.jsp</result>-->
+        <action name="sessionValue1" class="com.demo.struts.action.ServletValueAction1">
+
+            <result type="chain">sessionValue2</result>
         </action>
 
-        <action name="getValue" class="com.demo.struts.action.ServletValueAction3">
-            <!--<result>/success.jsp</result>-->
+        <action name="sessionValue2" class="com.demo.struts.action.ServletValueAction2">
+
+            <result>/success.jsp</result>
+        </action>
+
+        <action name="sessionValue3" class="com.demo.struts.action.ServletValueAction3">
+            <!--<result type="redirectAction">sessionValue2</result>-->
+
+            <result>/success.jsp</result>
+
         </action>
 
     </package>
+
+    <!--它也相当于请求转发。它一般情况下用于从一个action跳转到另一个action。-->
+    <!--dispatcher:它代表的是请求转发，也是默认值。它一般用于从action跳转到页面。-->
+    <!--redirect:它代表的是重定向  它一般用于从action跳转到页面-->
+    <!--redirectAction: 它代表的是重定向  它一般用于从action跳转另一个action。-->
+    <!--stream:代表的是服务器端返回的是一个流，一般用于下载。-->
+    <!--了解: freemarker  velocity-->
 
 </struts>

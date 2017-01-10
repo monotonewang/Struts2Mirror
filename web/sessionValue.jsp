@@ -16,6 +16,6 @@
     application.setAttribute("aname", "avalue");
 
 %>
-<a href="${pageContext.request.contextPath}/sessionValue">访问demo1servletAction</a>
+<a href="${pageContext.request.contextPath}/sessionValue1">访问demo1servletAction</a>
 </body>
 </html>

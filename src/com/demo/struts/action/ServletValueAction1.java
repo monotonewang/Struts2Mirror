@@ -33,4 +33,5 @@ public class ServletValueAction1 extends ActionSupport {
 		System.out.println("已经存入用户名");
 		return SUCCESS;
 	}
+
 }
