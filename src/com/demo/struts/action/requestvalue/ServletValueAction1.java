@@ -1,4 +1,4 @@
-package com.demo.struts.action;
+package com.demo.struts.action.requestvalue;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -25,7 +25,7 @@ public class ServletValueAction1 extends ActionSupport {
 
 		// 2.3 获取请求参数
 //		 Map<String, Object> paramMap = context.getParameters();
-//		 request.getParameterMap();
+//		 requestvalue.getParameterMap();
 //		 System.out.println(((String[])paramMap.get("username"))[0]);
 
 		// 2.4 向request范围存储数据

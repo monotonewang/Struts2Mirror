@@ -1,4 +1,4 @@
-package com.demo.struts.action;
+package com.demo.struts.action.basic;
 
 import com.opensymphony.xwork2.ActionSupport;
 

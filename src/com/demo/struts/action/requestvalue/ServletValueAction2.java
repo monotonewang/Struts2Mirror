@@ -1,4 +1,4 @@
-package com.demo.struts.action;
+package com.demo.struts.action.requestvalue;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;

@@ -9,14 +9,14 @@
         <!--默认的配置Action-class处理类-不走ActionSupport-->
         <default-action-ref name="default"/>
         <!--配置默认的404页面-->
-        <default-class-ref class="com.demo.struts.action.DefaultAction"/>
+        <default-class-ref class="com.demo.struts.action.basic.DefaultAction"/>
         <!--案例一显示一个HelloWorld-->
-        <action name="hello" class="com.demo.struts.action.HelloAction"
+        <action name="hello" class="com.demo.struts.action.basic.HelloAction"
                 method="say">
             <result name="good">/hello.jsp</result>
         </action>
         <!---->
-        <action name="default" class="com.demo.struts.action.DefaultAction">
+        <action name="default" class="com.demo.struts.action.basic.DefaultAction">
             <result>/default.jsp</result>
         </action>
 

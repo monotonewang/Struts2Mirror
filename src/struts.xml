@@ -7,26 +7,25 @@
     <!--人为常量配置-->
     <!--可以设置默认的struts后缀名称-->
     <constant name="struts.action.extension" value="abc,,"/>
-
+    <!--访问界面报错的时候，struts2会自动生成错误页面-->
     <constant name="struts.devMode" value="true"/>
 
     <!--一个模块一个包。name用于声明包名 extends代表是继承的包名-->
-    <!--<include file="hello.xml"/>-->
     <!--include多个会报错-->
+    <!--<include file="hello.xml"/>-->
     <!--<include file="book.xml"/>-->
-
-
-    <include file="sessionValue.xml"/>
+    <!--<include file="requestValue.xml"/>-->
+    <include file="model.xml"/>
 
     <!--<package name="dd" namespace="/abc" extends="struts-default">-->
-    <!--<action name="hello" class="com.demo.struts.action.HelloAction"-->
+    <!--<action name="hello" class="com.demo.struts.action.basic.HelloAction"-->
     <!--method="say">-->
     <!--<result name="good">/hello.jsp</result>-->
     <!--</action>-->
     <!--</package>-->
 
     <!--利用struts框架的思想，模拟一个struts框架-->
-    <!--<action name="hello" class="com.demo.struts.action.HelloAction"-->
+    <!--<action name="hello" class="com.demo.struts.action.basic.HelloAction"-->
     <!--method="say">-->
     <!--<result name="good">/hello.jsp</result>-->
     <!--</action>-->

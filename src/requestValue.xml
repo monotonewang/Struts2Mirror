@@ -11,17 +11,17 @@
             <result>/success.jsp</result>
         </global-results>
 
-        <action name="sessionValue1" class="com.demo.struts.action.ServletValueAction1">
+        <action name="requestValue1" class="com.demo.struts.action.requestvalue.ServletValueAction1">
 
             <result type="chain">sessionValue2</result>
         </action>
 
-        <action name="sessionValue2" class="com.demo.struts.action.ServletValueAction2">
+        <action name="requestValue2" class="com.demo.struts.action.requestvalue.ServletValueAction2">
 
             <result>/success.jsp</result>
         </action>
 
-        <action name="sessionValue3" class="com.demo.struts.action.ServletValueAction3">
+        <action name="requestValue3" class="com.demo.struts.action.requestvalue.ServletValueAction3">
             <!--<result type="redirectAction">sessionValue2</result>-->
 
             <result>/success.jsp</result>
