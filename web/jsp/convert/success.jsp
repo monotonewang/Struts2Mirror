@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: 7
@@ -12,5 +13,6 @@
 </head>
 <body>
     success
+    <s:fielderror/>
 </body>
 </html>

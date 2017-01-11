@@ -1,4 +1,4 @@
-package com.demo.struts.action.convert;
+package com.demo.struts.action.convert.domain;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -9,7 +9,7 @@ import java.util.Date;
 public class UserConvert {
 	private String username;
 	private String password;
-	private int age;
+	private Integer age;//这里使用包装类也是可以的
 	private Date birthday;
 	private String[] hobby;
 

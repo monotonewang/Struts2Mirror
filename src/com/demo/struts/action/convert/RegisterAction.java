@@ -1,5 +1,6 @@
 package com.demo.struts.action.convert;
 
+import com.demo.struts.action.convert.domain.UserConvert;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
