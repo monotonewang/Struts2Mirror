@@ -20,13 +20,19 @@
 
         <action name="login2" class="com.demo.struts.action.login.LoginAction2">
             <result name="failer">/jsp/login/login2.jsp</result>
-            <result name="redirect">/jsp/login/loginSuccess.jsp</result>
+            <result type="redirect">/jsp/login/loginSuccess.jsp</result>
         </action>
 
         <action name="login3" class="com.demo.struts.action.login.LoginAction3">
             <result name="failer">/jsp/login/login3.jsp</result>
-            <result name="redirect">/jsp/login/loginSuccess.jsp</result>
+            <result type="redirect">/jsp/login/loginSuccess.jsp</result>
         </action>
+
+        <action name="loginList" class="com.demo.struts.action.login.ListLoginAction">
+
+        </action>
+
+        <action name="mapLogin" class="com.demo.struts.action.login.MapLoginAction"/>
 
     </package>
 

@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by 7 on 2017/1/10.
  */
+//ognl -->jsp页面需要使用ognl表达式。
+//缺点是更换框架时候麻烦。优点是简单
 public class LoginAction2 extends ActionSupport {
 	private User user;
 

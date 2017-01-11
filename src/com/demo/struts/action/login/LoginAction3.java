@@ -2,6 +2,7 @@ package com.demo.struts.action.login;
 
 import com.demo.struts.action.login.domain.User;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
 import org.apache.struts2.ServletActionContext;
 
 import javax.servlet.http.HttpServletRequest;
@@ -9,16 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by 7 on 2017/1/10.
  */
-public class LoginAction3 extends ActionSupport {
+//缺点一次只能封装一个model
+public class LoginAction3 extends ActionSupport implements ModelDriven<User>{
 
-	private User user;
+	private User user=new User();
 
-	public User getUser() {
+	@Override
+	public User getModel() {
 		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
 	}
 
 	@Override
@@ -35,4 +34,6 @@ public class LoginAction3 extends ActionSupport {
 			return "failer";
 		}
 	}
+
+
 }
