@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by 7 on 2017/1/10.
  */
-//缺点一次只能封装一个model
+//模型驱动。缺点一次只能封装一个model
 public class LoginAction3 extends ActionSupport implements ModelDriven<User>{
 
 	private User user=new User();

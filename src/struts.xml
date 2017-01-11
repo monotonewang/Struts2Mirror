@@ -15,7 +15,8 @@
     <!--<include file="basicHello.xml"/>-->
     <!--<include file="basicBook.xml"/>-->
     <!--<include file="requestValue.xml"/>-->
-    <include file="login.xml"/>
+    <!--<include file="login.xml"/>-->
+    <include file="convert.xml"/>
 
     <!--<package name="dd" namespace="/abc" extends="struts-default">-->
     <!--<action name="hello" class="com.demo.struts.action.basic.HelloAction"-->
